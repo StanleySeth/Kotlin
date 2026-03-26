@@ -7,7 +7,7 @@
     val sum : Int = number1 + number2    
 
     //print out the output
-    println(sum)  
+    println("The sum is: " + sum)  
     
     
     //Subtraction
@@ -17,7 +17,7 @@
     val difference : Int = number3 - number4    
 
     //print out the output
-    println(difference)
+    println("The difference is: "+ difference)
 }
 
 

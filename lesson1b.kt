@@ -17,4 +17,3 @@ fun main() {
 
 
 
-// Research on conditional statements in kotlin
