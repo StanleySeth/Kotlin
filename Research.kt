@@ -77,3 +77,4 @@ if (theAge >= 18) {
 
 //Research on compiler construction and design
 // Research on the looping structures in kotlin, how to create an array in kotlin
+//Research on functions without parameters in kotlin
