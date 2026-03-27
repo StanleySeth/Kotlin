@@ -8,5 +8,7 @@ fun main(args: Array<String>) {
 
     println("Hello, $name!")
 
+    //Can you have a function without a function body?
+
 
 }
