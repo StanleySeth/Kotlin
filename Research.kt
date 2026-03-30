@@ -1,0 +1,123 @@
+// Research on conditional statements in kotlin
+fun main () {
+    //THE IF CONDITIONAL STATEMENT
+//1.If statement
+val age = 18
+
+if (age >= 18) {
+    println("You are an adult")
+}
+
+//2.If-else statement
+val number = 5
+
+if (number % 2 == 0) {
+    println("Even")
+} else {
+    println("Odd")
+}
+
+//3.If else-if else statement
+val score = 75
+
+if (score >= 90) {
+    println("Grade A")
+} else if (score >= 80) {
+    println("Grade B")
+} else if (score >= 70) {
+    println("Grade C")
+} else {
+    println("Grade D")
+}
+
+    //WHEN CONDITIONAL STATEMENT
+    val day = 3
+
+when (day) {
+    1 -> println("Monday")
+    2 -> println("Tuesday")
+    3 -> println("Wednesday")
+    else -> println("Invalid day")
+}
+
+//when with multiple conditions
+val x = 10
+
+when (x) {
+    1, 2, 3 -> println("Small number")
+    in 4..10 -> println("Medium number")
+    else -> println("Large number")
+}
+
+//when as an expression
+val num = 7
+
+val result = when {
+    num % 2 == 0 -> "Even"
+    else -> "Odd"
+}
+
+println(result)
+
+
+    //NESTED CONDITIONALS
+    val theAge : Int = 20
+    val hasID = true
+
+if (theAge >= 18) {
+    if (hasID) {
+        println("Entry allowed")
+    } else {
+        println("ID required")
+    }
+}
+
+
+  val person = Person("Stanley")
+    val student = Student("Seth", 101)
+    val teacher = Teacher("Bernard", "Mathematics")
+
+    person.introduce()   
+    student.introduce()  
+    teacher.introduce()  
+
+
+}
+
+//Research on compiler construction and design
+// Research on the looping structures in kotlin, how to create an array in kotlin
+//Research on functions without parameters in kotlin
+
+
+
+
+
+
+
+
+// Research on inherintance in kotlin. Come up with an example of a program
+//Inheritance in Kotlin allows you to reuse code by creating subclasses that extend existing classes. By default, classes in Kotlin are final, so you must mark a class with the open keyword to make it inheritable.
+//In Kotlin, a class is essentially a blueprint for creating objects. It defines the properties (data) and functions (behavior) that its objects will have. An object is a concrete instance of a class, with its own unique state and behavior.
+
+// Base class (superclass)
+open class Person(val name: String) {
+    open fun introduce() {
+        println("Hi, my name is $name.")
+    }
+}
+
+// Derived class (subclass)
+class Student(name: String, val studentId: Int) : Person(name) {
+    override fun introduce() {
+        println("Hi, I'm $name and my student ID is $studentId.")
+    }
+}
+
+// Another subclass
+class Teacher(name: String, val subject: String) : Person(name) {
+    override fun introduce() {
+        println("Hello, I'm $name and I teach $subject.")
+    }
+}
+
+
